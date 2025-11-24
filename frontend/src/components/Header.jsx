@@ -88,10 +88,10 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg- shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-blue-600">Trizen</div>
+          <div className="text-2xl font-bold text-blue-600 bg-white p-2 rounded-2xl shadow-md">Trizen</div>
           <div className="flex-1 max-w-2xl mx-4 relative" ref={searchRef}>
             <div className="relative">
               <input
