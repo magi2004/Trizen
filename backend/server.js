@@ -83,12 +83,15 @@ app.post('/api/seed', async (req, res) => {
       { name: 'Air Purifier Pro', category: 'Home', price: 12999, rating: 4.3, image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400' },
       { name: 'Vacuum Cleaner', category: 'Home', price: 6999, rating: 4.2, image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400' },
       { name: 'Desk Lamp LED', category: 'Home', price: 1999, rating: 4.0, image: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=400' },
-      { name: 'Yoga Mat Premium', category: 'Sports', price: 1499, rating: 4.3, image: 'https://images.unsplash.com/photo-1601925260368-ae2f83d34e08?w=400' },
+      { name: 'Air Fryer Max Crisp', category: 'Home', price: 14999, rating: 4.4, image: 'https://images.unsplash.com/photo-1506368083636-6defb67639c5?w=400' },
       { name: 'Dumbbell Set 20kg', category: 'Sports', price: 4999, rating: 4.5, image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400' },
       { name: 'Basketball Official', category: 'Sports', price: 1999, rating: 4.4, image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400' },
-      { name: 'Tennis Racket Pro', category: 'Sports', price: 7999, rating: 4.6, image: 'https://images.unsplash.com/photo-1622163642999-9586bcb4a809?w=400' },
+      { name: 'Smart Fitness Tracker', category: 'Sports', price: 5999, rating: 4.4, image: 'https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=400' },
       { name: 'Gaming Mouse RGB', category: 'Electronics', price: 2499, rating: 4.4, image: 'https://images.unsplash.com/photo-1527814050087-3793815479db?w=400' },
       { name: 'Mechanical Keyboard', category: 'Electronics', price: 5999, rating: 4.5, image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400' },
+      { name: 'Smart Home Hub Mini', category: 'Electronics', price: 15999, rating: 4.4, image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400' },
+      { name: 'Portable Projector Beam', category: 'Electronics', price: 18999, rating: 4.1, image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400' },
+      { name: 'Ergonomic Office Chair', category: 'Home', price: 12999, rating: 4.5, image: 'https://images.unsplash.com/photo-1503602642458-232111445657?w=400' },
     ];
 
     await Product.insertMany(sampleProducts);

@@ -13,7 +13,7 @@ const ProductsGrid = ({ products, loading }) => {
   if (products.length === 0) {
     return (
       <div className="text-center py-20">
-        <p className="text-gray-500 text-xl">No products found.</p>
+        <p className="text-gray-500 dark:text-gray-300 text-xl">No products found.</p>
       </div>
     );
   }
