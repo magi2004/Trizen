@@ -92,6 +92,11 @@ app.post('/api/seed', async (req, res) => {
       { name: 'Smart Home Hub Mini', category: 'Electronics', price: 15999, rating: 4.4, image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400' },
       { name: 'Portable Projector Beam', category: 'Electronics', price: 18999, rating: 4.1, image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400' },
       { name: 'Ergonomic Office Chair', category: 'Home', price: 12999, rating: 4.5, image: 'https://images.unsplash.com/photo-1503602642458-232111445657?w=400' },
+      { name: 'Electric Kettle Pro', category: 'Home', price: 2499, rating: 4.3, image: 'https://images.unsplash.com/photo-1738520420652-0c47cea3922b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZWxlY3RyaWMlMjBrZXR0bGV8ZW58MHx8MHx8fDA%3D' },
+      { name: 'Noise Cancelling Earbuds', category: 'Electronics', price: 3999, rating: 4.4, image: 'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZWFyYnVkc3xlbnwwfHwwfHx8MA%3D%3D' },
+      { name: 'Trekking Backpack 40L', category: 'Outdoors', price: 3499, rating: 4.5, image: 'https://images.unsplash.com/photo-1509762774605-f07235a08f1f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFja3BhY2t8ZW58MHx8MHx8fDA%3D' },
+      { name: 'Stainless Water Bottle', category: 'Outdoors', price: 999, rating: 4.2, image: 'https://images.unsplash.com/photo-1544003484-3cd181d17917?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RlZWwlMjBib3R0bGV8ZW58MHx8MHx8fDA%3D' },
+      { name: 'Yoga Block Foam', category: 'Sports', price: 599, rating: 4.1, image: 'https://images.unsplash.com/photo-1646239646963-b0b9be56d6b5?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8eW9nYSUyMGJsb2NrJTIwZm9hbXxlbnwwfHwwfHx8MA%3D%3D' },
     ];
 
     await Product.insertMany(sampleProducts);
