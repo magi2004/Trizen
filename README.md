@@ -240,13 +240,13 @@ This project is created as part of a MERN Stack Developer Intern assignment.
 Add your images and a video below. Replace the placeholder URLs or embed code with your own files/links.
 
 ### Image 1
-![Image 1 - Caption]()
+![Image 1 - Caption](<img width="1428" height="813" alt="Image" src="https://github.com/user-attachments/assets/ff9f36d5-64d8-4e65-a987-9a45abdcf486" />)
 
 ### Image 2
-![Image 2 - Caption]()
+![Image 2 - Caption](<img width="1475" height="658" alt="Image" src="https://github.com/user-attachments/assets/6438bc0d-bc8a-45b5-9708-24f294bb41be" />)
 
 ### Image 3
-![Image 3 - Caption]()
+![Image 3 - Caption](<img width="1860" height="920" alt="Image" src="https://github.com/user-attachments/assets/fd0d674e-d2d5-4717-b0ad-2cbb933c314e" />)
 
 ### Video
 
