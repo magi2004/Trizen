@@ -234,3 +234,19 @@ npm start
 ## 📄 License
 
 This project is created as part of a MERN Stack Developer Intern assignment.
+
+## 📷 Media
+
+Add your images and a video below. Replace the placeholder URLs or embed code with your own files/links.
+
+### Image 1
+![Image 1 - Caption]()
+
+### Image 2
+![Image 2 - Caption]()
+
+### Image 3
+![Image 3 - Caption]()
+
+### Video
+

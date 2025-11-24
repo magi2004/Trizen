@@ -97,9 +97,9 @@ const Header = ({
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between gap-4">
           <div className="text-2xl font-bold text-blue-600 bg-white/90 dark:bg-gray-800/80 dark:text-white px-4 py-2 rounded-2xl shadow-md">
-            Trizen
+            Ecco
           </div>
-          <div className="flex-1 max-w-2xl mx-4 flex items-center gap-3" ref={searchRef}>
+          <div className="flex-1 max-w-xl md:max-w-2xl mx-4 flex items-center gap-3" ref={searchRef}>
             {isMobile && (
               <button
                 type="button"
@@ -112,7 +112,7 @@ const Header = ({
                 </svg>
               </button>
             )}
-            <div className="relative flex-1">
+            <div className="relative flex-1 min-w-0">
               <input
                 type="text"
                 placeholder="Search products..."
@@ -143,35 +143,36 @@ const Header = ({
                   <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-600"></div>
                 </div>
               )}
-            </div>
-            {showSuggestions && (suggestions.length > 0 || isLoading) && (
-              <div
-                ref={suggestionsRef}
-                className="absolute z-50 w-full mt-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg max-h-60 overflow-y-auto"
-              >
-                {isLoading ? (
-                  <div className="px-4 py-3 text-center text-gray-500 dark:text-gray-300">
-                    <div className="inline-block animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600 mr-2"></div>
-                    Searching...
-                  </div>
-                ) : suggestions.length > 0 ? (
-                  suggestions.map((product, index) => (
-                    <div
-                      key={product._id || index}
-                      onClick={() => handleSuggestionClick(product.name)}
-                      className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer border-b border-gray-100 dark:border-gray-700/70 last:border-b-0 transition-colors"
-                    >
-                      <div className="font-medium text-gray-800 dark:text-gray-100">{product.name}</div>
-                      <div className="text-sm text-gray-500 dark:text-gray-300">₹{product.price.toLocaleString()}</div>
+
+              {showSuggestions && (suggestions.length > 0 || isLoading) && (
+                <div
+                  ref={suggestionsRef}
+                  className="absolute left-0 right-0 z-50 mt-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg max-h-60 overflow-y-auto max-w-full"
+                >
+                  {isLoading ? (
+                    <div className="px-4 py-3 text-center text-gray-500 dark:text-gray-300">
+                      <div className="inline-block animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600 mr-2"></div>
+                      Searching...
                     </div>
-                  ))
-                ) : (
-                  <div className="px-4 py-3 text-center text-gray-500 dark:text-gray-300">
-                    No products found
-                  </div>
-                )}
-              </div>
-            )}
+                  ) : suggestions.length > 0 ? (
+                    suggestions.map((product, index) => (
+                      <div
+                        key={product._id || index}
+                        onClick={() => handleSuggestionClick(product.name)}
+                        className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer border-b border-gray-100 dark:border-gray-700/70 last:border-b-0 transition-colors"
+                      >
+                        <div className="font-medium text-gray-800 dark:text-gray-100">{product.name}</div>
+                        <div className="text-sm text-gray-500 dark:text-gray-300">₹{product.price.toLocaleString()}</div>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="px-4 py-3 text-center text-gray-500 dark:text-gray-300">
+                      No products found
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
           </div>
           <div className="flex items-center space-x-3">
             <button
